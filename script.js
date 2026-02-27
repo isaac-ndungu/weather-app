@@ -1,4 +1,4 @@
-const APIkey = process.env.OPENWEATHER_API_KEY;
+const APIkey = '5ba0a33daa717fc484cf26dc71a137b4';
 
 
 // DOM Elements
