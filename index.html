@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans">
+    <header class="bg-sky-500 p-24 text-center text-white">
+        <h1 class="text-5xl font-bold mb-10 tracking-wide">Weather Dashboard</h1>
+        <p class="text-lg font-semibold w-[60%] mx-auto">Get real-time weather information for your location and search for weather conditions in cities around the world.</p>
+    </header>
+
+    <section class="bg-sky-200/60 text-center p-8">
+        <h2 class="text-2xl font-bold mb-8">Current Weather</h2>
+
+        <div id="currentWeatherCard" class="bg-white p-8 w-[40%] rounded-xl shadow-lg mx-auto gap-4">
+            <div id="cardHeader" class="gap-4 text-xl text-start font-bold tracking-wide"></div>
+            <div id="tempSection" class="flex gap-4 justify-center items-center m-4"></div>
+            <div id="cardFooter" class="flex justify-between gap-6 p-4 rounded-b-xl"></div>
+        </div>
+    </section>
+
+    <section class="text-center px-8 py-16">
+        <h2 class="text-2xl font-bold pb-8">Search Weather by City.</h2>
+        <form class="border border-gray-300 rounded-md p-4 w-[40%] mx-auto">
+            <h3 class="text-lg font-bold text-start my-6">Find Weather Information</h3>
+
+            <div class="flex flex-col text-start">
+                <label for="cityInput" class="font-semibold ml-4 mb-2">City Name</label>
+                <div>
+                    <input type="text" id="cityInput" name="cityInput" placeholder="e.g. Nairobi" class="border border-gray-300 rounded-md p-2 mx-4 w-3/4">
+                    <button type="submit" class="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-md">Search</button>
+                </div>
+            </div>
+            
+        </form>
+
+        <div id="weatherCard" class="bg-white p-8 w-[40%] rounded-xl shadow-lg mx-auto gap-4">
+            <div id="weatherCardHeader" class="gap-4 text-xl text-start font-bold tracking-wide"></div>
+            <div id="weatherTempSection" class="flex gap-4 justify-center items-center m-4"></div>
+            <div id="weatherCardFooter" class="flex justify-between gap-6 p-4 rounded-b-xl"></div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
